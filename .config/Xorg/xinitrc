@@ -7,4 +7,6 @@ unclutter -idle 2 &
 
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
+
+compton -b 
 exec i3

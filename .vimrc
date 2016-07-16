@@ -32,3 +32,4 @@ set ignorecase
 set ruler
 
 hi Normal ctermbg=none
+hi NonText ctermbg=none
