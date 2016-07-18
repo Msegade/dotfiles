@@ -9,4 +9,7 @@ autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
 compton -b 
+
+wallpaper.sh
+
 exec i3
