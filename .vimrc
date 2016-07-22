@@ -33,3 +33,6 @@ set ruler
 
 hi Normal ctermbg=none
 hi NonText ctermbg=none
+
+" Tabs for makefiles
+autocmd FileType make setlocal noexpandtab
