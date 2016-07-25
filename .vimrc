@@ -10,6 +10,7 @@ set shiftwidth=4
 set expandtab
 
 set relativenumber
+set number
 
 set showcmd
 set cursorline
@@ -37,4 +38,3 @@ hi NonText ctermbg=none
 
 " Tabs for makefiles
 autocmd FileType make setlocal noexpandtab
-autocmd Filetype cpp inoremap <buffer> { {<CR>}<ESC>ko

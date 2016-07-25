@@ -22,7 +22,7 @@ URxvt.keysym.M-v: 		perl:clipboard:paste
 
 !Font
 !Inconsolata with dejavu and unifont for fallback
-URxvt.font: xft:Inconsolata:style=Regular:size=11, \
+URxvt.font: xft:Inconsolata:style=Regular:size=12, \
             xft:Dejavu sans mono:size=11, \
              -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
 
