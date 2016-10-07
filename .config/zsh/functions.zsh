@@ -19,6 +19,10 @@ cs() {
     cd "$@" && ls
 }
 
+js() {
+    j "$@" && ls
+}
+
 
 function swap()         
 {
@@ -27,3 +31,4 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
+

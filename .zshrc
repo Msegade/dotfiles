@@ -8,4 +8,6 @@ source ~/.config/zsh/prompt.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/functions.zsh
 
+# Autojump 
+source /etc/profile.d/autojump.zsh
 eval `dircolors ~/.config/dircolors`
