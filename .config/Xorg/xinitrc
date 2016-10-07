@@ -10,7 +10,7 @@ autocutsel -selection PRIMARY -fork &
 
 urxvtd &
 
-compton -b 
+#compton --opengl --vsync opengl-swc --paint-on-overlay -b 
 
 wallpaper.sh
 
