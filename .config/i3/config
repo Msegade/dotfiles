@@ -21,7 +21,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+x kill
@@ -139,15 +139,15 @@ focus_follows_mouse no
 
 # Scratchpad
 # Make the currently focused window a scratchpad
-exec --no-startup-id urxvt -name notes
+exec --no-startup-id urxvtc -name notes
 for_window [instance="notes"] move scratchpad; 
 #bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus [instance="notes"] scratchpad show
 
 
-exec --no-startup-id urxvt -name dropdown
+exec --no-startup-id urxvtc -name dropdown
 for_window [instance="dropdown"] floating enable, move scratchpad, scratchpad show;
 for_window [instance="dropdown"] resize set 1920px  300px, move position 0px 0px,  move scratchpad
 bindsym $mod+masculine [instance="dropdown"] scratchpad show
-bindsym $mod+Shift+ordfeminine exec urxvt -name dropdown
+bindsym $mod+Shift+ordfeminine exec urxvtc -name dropdown

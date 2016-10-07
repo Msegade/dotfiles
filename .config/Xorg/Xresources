@@ -7,7 +7,7 @@ URxvt.savelines: 2000
 URxvt.scrollBar: False
 URxvt.termName: xterm-256color
 URxvt.transparent: true
-URxvt.shading: 10
+URxvt.shading: 30
 URxvt.urgentOnBell: true
 
 
