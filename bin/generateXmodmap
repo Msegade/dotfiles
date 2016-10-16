@@ -1,12 +1,12 @@
 #!/bin/bash
 
 xconfdir="$HOME/.config/Xorg"
+xmodmapglobal="$xconfdir/XmodmapGlobal"
+xmodmaplocal="$xconfdir/XmodmapLocal"
 
-if [[ -f "$xconfdir/XmodmapGlobal" && -f "$xconfdir/XmodmapLocal" ]]; then
-    awk '/^!!/{getline <"XmodmapLocal"}1' XmodmapGlobal > Xmodmap
+if [[ -f "$xmodmapglobal" && -f "$xmodmaplocal" ]]; then
+    #awk '/^!!/{getline <$xmodmaplocal}1' "$xmodmapglobal" > "$xconfdir/Xmodmap"
+    awk 'NR==FNR{S[NR]=$0;next}/^!!/{$0=S[++count]}1' "$xmodmaplocal" "$xmodmapglobal" > "$xconfdir/Xmodmap"
 else
-   1>&2 echo "Could not create Xmodmap file "
+   1>&2 echo "Could not create Xmodmap file"
 fi
-
-
-
