@@ -29,6 +29,9 @@ bindsym $mod+x kill
 # start rofi
 bindsym $mod+e exec rofi -show run -font "inconsolata 12"
 
+bindsym $mod+Shift+u exec ~/bin/modifyfont increase
+bindsym $mod+Shift+d exec ~/bin/modifyfont decrease
+
 # change focus
 bindsym $mod+r focus left
 bindsym $mod+t focus down

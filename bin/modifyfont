@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+if [[ ! -f /tmp/Xresources ]]; then
+    cp ~/.config/Xorg/Xresources /tmp/.
+fi
+
+FONTSIZE=$(grep -E -m 1 -o 'size=[0-9]+' /tmp/Xresources | cut -d'=' -f2)
+if [[ "$1" ==  "increase" ]]; then
+    FONTSIZE=$((FONTSIZE+2))
+elif [[ "$1" == "decrease" ]]; then
+    FONTSIZE=$((FONTSIZE-2))
+fi
+#  -r to use extended regular expressions for the + ([0-9]+)
+sed -i -r "s/size=[0-9]+/size=$FONTSIZE/" /tmp/Xresources
+
+xrdb /tmp/Xresources
