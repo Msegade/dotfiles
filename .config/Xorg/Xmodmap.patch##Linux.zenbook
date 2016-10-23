@@ -1,0 +1,7 @@
+8c8,11
+< !!
+---
+> keysym Escape = Alt_L
+> keysym Caps_Lock = Escape
+> keysym Alt_L = ISO_Level3_Shift
+> keysym Menu = Super_R

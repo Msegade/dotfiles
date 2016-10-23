@@ -2,11 +2,13 @@
 
 xconfdir="$HOME/.config/Xorg"
 xmodmapglobal="$xconfdir/XmodmapGlobal"
-xmodmaplocal="$xconfdir/XmodmapLocal"
+xmodmappatch="$xconfdir/Xmodmap.patch"
 
-if [[ -f "$xmodmapglobal" && -f "$xmodmaplocal" ]]; then
-    #awk '/^!!/{getline <$xmodmaplocal}1' "$xmodmapglobal" > "$xconfdir/Xmodmap"
-    awk 'NR==FNR{S[NR]=$0;next}/^!!/{$0=S[++count]}1' "$xmodmaplocal" "$xmodmapglobal" > "$xconfdir/Xmodmap"
-else
-   1>&2 echo "Could not create Xmodmap file"
-fi
+patch "$xmodmapglobal" -i "$xmodmappatch" -o "$xconfdir"/Xmodmap
+
+#if [[ -f "$xmodmapglobal" && -f "$xmodmaplocal" ]]; then
+#    #awk '/^!!/{getline <$xmodmaplocal}1' "$xmodmapglobal" > "$xconfdir/Xmodmap"
+#    awk 'NR==FNR{S[NR]=$0;next}/^!!/{$0=S[++count]}1' "$xmodmaplocal" "$xmodmapglobal" > "$xconfdir/Xmodmap"
+#else
+#   1>&2 echo "Could not create Xmodmap file"
+#fi

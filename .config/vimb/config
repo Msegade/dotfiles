@@ -1,2 +1,5 @@
 set fontsize=14
 set input-autohide=true
+set completion-font=DejaVu Sans Mono 12
+set statusbar=true
+set status-font=monospace 12
