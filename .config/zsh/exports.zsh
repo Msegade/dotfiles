@@ -1,4 +1,4 @@
-fpath=( $fpath "/home/miguel/.config/zsh/pureprompt/" )
+fpath=( $fpath "/home/miguel/.config/zsh/zfunctions" )
 
 export PATH=$PATH:/home/miguel/bin
 

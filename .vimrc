@@ -1,4 +1,3 @@
-colorscheme badwolf
 syntax enable
 
 set nocompatible
@@ -9,7 +8,7 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-set relativenumber
+" set relativenumber
 set number
 
 set showcmd
