@@ -1,0 +1,17 @@
+set gui=none,tabs
+
+" Always normal mode on page load
+set focuscontent
+" Vim editor
+set editor="urxvt -e vim -f"
+
+" j/k
+map j 3<C-e>
+map k 3<C-y>
+
+hi CmdLine -append font-size:16px
+hi CompDesc -append font-size:16px
+hi CompResult -append font-size:16px
+hi WarningMsg -append font-size:16px
+
+
