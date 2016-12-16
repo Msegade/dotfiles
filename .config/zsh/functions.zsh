@@ -32,3 +32,9 @@ function swap()
     mv $TMPFILE "$2"
 }
 
+# Cd to newly created mount
+function cdm()
+{
+    cd /run/media/$USER/
+    cd $(ls -td -- */ | head -n 1)
+}

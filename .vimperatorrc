@@ -9,6 +9,7 @@ set editor="urxvt -e vim -f"
 map j 3<C-e>
 map k 3<C-y>
 
+" Vimperator fonts other font sizes are from gtk3
 hi CmdLine -append font-size:16px
 hi CompDesc -append font-size:16px
 hi CompResult -append font-size:16px

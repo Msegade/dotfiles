@@ -13,6 +13,9 @@ urxvtd &
 
 #compton --opengl --vsync opengl-swc --paint-on-overlay -b 
 
+dunst &
+udiskie &
+
 wallpaper.sh
 
 exec i3
