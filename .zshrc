@@ -8,7 +8,7 @@ source ~/.config/zsh/prompt.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/functions.zsh
 
-# Bundles
+# Bundles (Antibody)
 source ~/.config/zsh/sourceables.zsh
 
 # Autojump 
