@@ -38,3 +38,9 @@ function cdm()
     cd /run/media/$USER/
     cd $(ls -td -- */ | head -n 1)
 }
+# Umount latest created media
+function umm()
+{
+    cd /run/media/$USER/
+    umount $(ls -td -- */ | head -n 1)
+}

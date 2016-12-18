@@ -65,6 +65,3 @@ zle     -N   fzf-history-widget
 bindkey '^R' fzf-history-widget
 
 fi
-
-# umount completion
-zstyle ':completion:*:umount:*' ignored-patterns "^/run/media/$USER/*"
