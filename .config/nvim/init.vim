@@ -128,3 +128,4 @@ command Bd bp\|bd \#
 " ----------------------------------------------------------------------------
 
 imap <C-m> _<Esc>mzi<S-Right><C-o>b<C-o>g~iw<C-o>`z<Del>
+nnoremap <CR> :noh<CR><CR>

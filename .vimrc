@@ -37,3 +37,6 @@ hi NonText ctermbg=none
 
 " Tabs for makefiles
 autocmd FileType make setlocal noexpandtab
+
+" Clear With <CR> highlight search
+nnoremap <CR> :noh<CR><CR>

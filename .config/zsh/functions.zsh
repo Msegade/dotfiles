@@ -36,7 +36,7 @@ function swap()
 function cdm()
 {
     cd /run/media/$USER/
-    cd $(ls -td -- */ | head -n 1)
+    cd "$(ls -td -- */ | head -n 1)"
 }
 # Umount latest created media
 function umm()
