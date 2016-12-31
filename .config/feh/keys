@@ -1,0 +1,30 @@
+
+# image navigation 
+next_img n
+prev_img p
+
+# image movement
+scroll_up    j 
+scroll_down  k 
+scroll_left  h 
+scroll_right l 
+
+# File deletion
+#remove     d   Delete
+#delete   C-d C-Delete
+
+# remove now conflicts with toggle_filenames, so change that
+toggle_filenames f
+
+# zooming
+zoom_in  plus
+zoom_out minus
+zoom_default a
+zoom_fit s
+
+# I only hit these accidentaly
+save_image
+save_filelist
+
+# This leaves some conflicts with existing default bindings, but you should
+# get the idea.  And I'm not gonna fix the conflicts, I don't use qwerty ;-)
