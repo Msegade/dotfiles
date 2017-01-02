@@ -42,5 +42,5 @@ function cdm()
 function umm()
 {
     cd /run/media/$USER/
-    umount $(ls -td -- */ | head -n 1)
+    umount "$(ls -td -- */ | head -n 1)"
 }
