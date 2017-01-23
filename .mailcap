@@ -24,6 +24,9 @@ video/x-youtube; youtube-dl -q -o - '%s' | mpv - --autofit 640x480; test=test -n
 video/webm; mpv '%s' --autofit 640x480 --loop=inf; test=test -n "$DISPLAY"
 video/*; mpv '%s' --autofit 640x480 --loop=inf; test=test -n "$DISPLAY"
 
+#text/html; firefox '%s'
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+
 ###############################################################################
 # Commands below this point will attempt to display media directly in the
 # terminal when X is not available.

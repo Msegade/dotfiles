@@ -19,6 +19,26 @@ cs() {
     cd "$@" && ls
 }
 
+getDirByDepth() {
+    
+    dir=$(echo $PWD | cut -d'/' -f4-$((3+$1)))
+    echo "$HOME"/"$dir"
+
+}
+
+,() { cs $(getDirByDepth 1) }
+,,() { cs $(getDirByDepth 2) }
+,,,() { cs $(getDirByDepth 3) }
+,,,,() { cs $(getDirByDepth 4) }
+,,,,,() { cs $(getDirByDepth 5) }
+
+...() { cs ../../ }
+....() { cs ../../../ }
+.....() { cs ../../../../ }
+......() { cs ../../../../.. }
+.......() { cs ../../../../../.. }
+    
+
 js() {
     j "$@" && ls
 }

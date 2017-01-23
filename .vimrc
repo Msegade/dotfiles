@@ -24,7 +24,6 @@ set showmatch
 
 set incsearch
 set hlsearch
-nnoremap <leader><space> :nohlsearch<CR>
 
 set foldenable
 set foldlevelstart=10
@@ -40,3 +39,6 @@ autocmd FileType make setlocal noexpandtab
 
 " Clear With <CR> highlight search
 nnoremap <CR> :noh<CR><CR>
+
+:nnoremap <C-n> :bnext<CR>
+:nnoremap <C-p> :bprevious<CR>
