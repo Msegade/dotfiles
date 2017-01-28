@@ -40,5 +40,7 @@ autocmd FileType make setlocal noexpandtab
 " Clear With <CR> highlight search
 nnoremap <CR> :noh<CR><CR>
 
-:nnoremap <C-n> :bnext<CR>
-:nnoremap <C-p> :bprevious<CR>
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+
+imap <Leader>u <Esc>v`[U<Esc>gi

@@ -25,5 +25,5 @@ fi
 
 export PAGER='less'
 export EDITOR='vim'
-export BROWSER='vimb'
+export BROWSER='firefox'
 

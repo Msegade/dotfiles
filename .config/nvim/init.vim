@@ -126,6 +126,5 @@ command Bd bp\|bd \#
 " ----------------------------------------------------------------------------
 "  Mappings
 " ----------------------------------------------------------------------------
-
-imap <C-m> _<Esc>mzi<S-Right><C-o>b<C-o>g~iw<C-o>`z<Del>
-nnoremap <CR> :noh<CR><CR>
+imap <Leader>u <Esc>v`[U<Esc>A
+nnoremap <CR> :noh<CR>

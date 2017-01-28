@@ -2,8 +2,10 @@ alias tmux="tmux -f ~/.config/tmux.conf"
 
 alias ls='ls --color=auto'
 alias mpv='mpv --fs'
-alias yt='youtube-viewer --resolution=360p'
-alias ys='youtube-viewer --resolution=360p -SV'
+#alias yt='youtube-viewer --resolution=360p'
+#alias ys='youtube-viewer --resolution=360p -SV'
+alias yt='youtube-viewer'
+alias ys='youtube-viewer -SV'
 
 alias trde='trans -s de -t es -I'
 alias tres='trans -s es -t de -I'
