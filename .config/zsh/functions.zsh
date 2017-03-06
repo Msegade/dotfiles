@@ -64,3 +64,22 @@ function umm()
     cd /run/media/$USER/
     umount "$(ls -td -- */ | head -n 1)"
 }
+
+function cpt()
+{
+    source=$(readlink -f "$1")
+    echo $source | xsel -i
+
+}
+
+function pst()
+{
+    source=$(xclip -o)  
+    if [[ -d "$source" ]]; then
+        cp -r $source .
+    elif [[ -f "$source" ]]; then
+        cp "$source" .
+    fi
+
+
+}
