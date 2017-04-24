@@ -83,3 +83,13 @@ function pst()
 
 
 }
+
+function bak()
+{
+    cp -r "$1" "$1.bak"
+}
+
+function rbak()
+{
+    cp -r "$1" "${1%.bak}"
+}
