@@ -9,7 +9,8 @@ source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/functions.zsh
 
 # Bundles (Antibody)
-source ~/.config/zsh/sourceables.zsh
+antibody bundle mafredri/zsh-async
+antibody bundle sindresorhus/pure
 
 # Autojump 
 source /etc/profile.d/autojump.zsh
