@@ -15,7 +15,7 @@ alias p='ping -c 3 8.8.8.8'
 
 alias vimw="nvim -c :VimwikiIndex"
 
-alias xtart="xinit /home/miguel/.config/Xorg/xinitrc -- vt01"
+alias xtart="xinit $HOME/.config/Xorg/xinitrc -- vt01"
 
 alias rtv="rtv --enable-media"
 
