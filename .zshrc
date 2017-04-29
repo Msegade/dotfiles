@@ -8,7 +8,9 @@ source ~/.config/zsh/prompt.zsh
 source ~/.config/zsh/completion.zsh
 source ~/.config/zsh/functions.zsh
 
-# Bundles (Antibody)
+# Antibody
+source <(antibody init)
+# Bundles 
 antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 

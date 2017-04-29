@@ -5,10 +5,3 @@ xmodmapglobal="$xconfdir/XmodmapGlobal"
 xmodmappatch="$xconfdir/Xmodmap.patch"
 
 patch "$xmodmapglobal" -i "$xmodmappatch" -o "$xconfdir"/Xmodmap
-
-#if [[ -f "$xmodmapglobal" && -f "$xmodmaplocal" ]]; then
-#    #awk '/^!!/{getline <$xmodmaplocal}1' "$xmodmapglobal" > "$xconfdir/Xmodmap"
-#    awk 'NR==FNR{S[NR]=$0;next}/^!!/{$0=S[++count]}1' "$xmodmaplocal" "$xmodmapglobal" > "$xconfdir/Xmodmap"
-#else
-#   1>&2 echo "Could not create Xmodmap file"
-#fi
