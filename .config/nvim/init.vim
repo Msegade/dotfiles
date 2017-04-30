@@ -14,6 +14,10 @@ Plug 'majutsushi/tagbar'
 Plug 'Rip-Rip/clang_complete'
 
 Plug 'octol/vim-cpp-enhanced-highlight'
+
+Plug 'vimwiki/vimwiki' 
+
+Plug 'PotatoesMaster/i3-vim-syntax'
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
@@ -21,7 +25,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 "Plug 'taglist.vim'
 "Plug 'Shougo/deoplete.nvim'
 "
-Plug 'vimwiki/vimwiki' 
 
 " Make sure you use single quotes
 "Plug 'junegunn/seoul256.vim'

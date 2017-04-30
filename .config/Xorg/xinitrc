@@ -1,6 +1,8 @@
 setxkbmap dvorak es 
 
-generateXmodmap && xmodmap ~/.config/Xorg/Xmodmap
+patchLocalFiles
+
+xmodmap ~/.config/Xorg/Xmodmap
 
 xrdb ~/.config/Xorg/Xresources
 

@@ -5,3 +5,10 @@ xmodmapglobal="$xconfdir/XmodmapGlobal"
 xmodmappatch="$xconfdir/Xmodmap.patch"
 
 patch "$xmodmapglobal" -i "$xmodmappatch" -o "$xconfdir"/Xmodmap
+
+i3confdir="$HOME/.config/i3"
+i3confglobal="$i3confdir/configGlobal"
+i3confpatch="$i3confdir/config.patch"
+
+patch "$i3confglobal" -i "$i3confpatch" -o "$i3confdir"/config
+

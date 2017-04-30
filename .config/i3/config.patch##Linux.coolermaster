@@ -1,0 +1,23 @@
+--- configGlobal	2017-04-30 10:22:47.086635816 +0200
++++ config	2017-04-30 10:25:22.239491238 +0200
+@@ -79,7 +79,20 @@
+ ################################################
+ # Local Configuration
+ 
++workspace $WS1 output DVI-I-1
++workspace $WS2 output DVI-I-1
++workspace $WS3 output DVI-I-1
++workspace $WS4 output DVI-I-1
++workspace $WS5 output DVI-I-1
+ 
++workspace $WS6 output  DVI-I-2
++workspace $WS7 output  DVI-I-2
++workspace $WS8 output  DVI-I-2
++workspace $WS9 output  DVI-I-2
++workspace $WS10 output DVI-I-2
++
++bindsym $mod+h move container to output right
++bindsym $mod+c focus output left
+ 
+ ################################################
+ 
