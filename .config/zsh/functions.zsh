@@ -67,19 +67,28 @@ function umm()
 
 function cpt()
 {
-    source=$(readlink -f "$1")
-    echo $source | xsel -i
+    sources=''
+    for source in "$@"
+    do 
+       sources="$sources $(readlink -f $source)"
+    done
+    echo $sources | xsel -i
 
 }
 
 function pst()
 {
-    source=$(xclip -o)  
-    if [[ -d "$source" ]]; then
-        cp -r $source .
-    elif [[ -f "$source" ]]; then
-        cp "$source" .
-    fi
+    # Convert it to an array
+    sources=($(xclip -o))
+    for source in $sources
+    do 
+        echo "$source"
+        if [[ -d "$source" ]]; then
+            cp -r "$source" .
+        elif [[ -f "$source" ]]; then
+            cp "$source" .
+        fi
+    done
 
 
 }
