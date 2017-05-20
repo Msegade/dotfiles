@@ -15,6 +15,7 @@ antibody bundle mafredri/zsh-async
 antibody bundle sindresorhus/pure
 
 # Autojump 
-source /etc/profile.d/autojump.zsh
+[ -f /etc/profile.d/autjump.zsh ] &&  source /etc/profile.d/autojump.zsh
+[ -f /usr/share/autojump/autojump.zsh ] &&  source /usr/share/autojump/autojump.zsh
 eval `dircolors ~/.config/dircolors`
 
