@@ -1,0 +1,32 @@
+#!/bin/python2
+
+import sys, os.path
+from jinja2 import Template, Environment, FileSystemLoader
+
+d = {}
+with open(sys.argv[1]) as f:
+    for line in f:
+        line = line.strip()
+        # Ignore comments and blank lines
+        if not line.startswith("#") and line:
+            (key, val) = line.split()
+            d[key] = val
+
+env = Environment(loader=FileSystemLoader('./'))
+template = env.get_template(sys.argv[2])
+render = template.render(d)
+
+truncate=False
+if (os.path.isfile(sys.argv[3])):
+    # First open to  know if the file has changed ('r')
+    with open(sys.argv[3], 'r') as f:
+        if (f.read() != render):
+            truncate=True
+    if truncate==True:
+        # Second open to write the new file ('w')
+        with open(sys.argv[3], 'w') as f:
+            f.write(render)
+else:
+    with open(sys.argv[3], 'w') as f:
+        f.write(render)
+
