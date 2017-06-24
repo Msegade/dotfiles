@@ -1,10 +1,14 @@
 #!/bin/python2
 
 import sys, os.path
-from jinja2 import Template, Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader
+
+paramFile=sys.argv[1]
+templateFile=sys.argv[2]
+resultFile=sys.argv[3]
 
 d = {}
-with open(sys.argv[1]) as f:
+with open(paramFile) as f:
     for line in f:
         line = line.strip()
         # Ignore comments and blank lines
@@ -13,20 +17,17 @@ with open(sys.argv[1]) as f:
             d[key] = val
 
 env = Environment(loader=FileSystemLoader('./'))
-template = env.get_template(sys.argv[2])
+template = env.get_template(templateFile)
 render = template.render(d)
 
 truncate=False
-if (os.path.isfile(sys.argv[3])):
-    # First open to  know if the file has changed ('r')
-    with open(sys.argv[3], 'r') as f:
-        if (f.read() != render):
-            truncate=True
-    if truncate==True:
-        # Second open to write the new file ('w')
-        with open(sys.argv[3], 'w') as f:
-            f.write(render)
-else:
-    with open(sys.argv[3], 'w') as f:
+exists=os.path.isfile(resultFile)
+# First open to  know if the file has changed ('r')
+with open(resultFile, 'r') as f:
+    if (f.read() != render):
+        truncate=True
+if (truncate or not exists):
+    # Second open to overwrite as new file ('w')
+    with open(resultFile, 'w') as f:
         f.write(render)
 
