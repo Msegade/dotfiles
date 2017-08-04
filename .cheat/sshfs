@@ -1,0 +1,2 @@
+# Share a directory through ssh with a remote host
+sshfs -o allow_other [-p <portNumber>] <shareDirectory> [user@]host:[mountpoint] 
