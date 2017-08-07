@@ -1,6 +1,7 @@
 alias tmux="tmux -f ~/.config/tmux.conf"
 
 alias ls='ls --color=auto'
+alias ll='exa --long --git'
 alias mpv='mpv --fs'
 #alias yt='youtube-viewer --resolution=360p'
 #alias ys='youtube-viewer --resolution=360p -SV'
