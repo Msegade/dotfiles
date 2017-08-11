@@ -102,3 +102,8 @@ function rbak()
 {
     cp -r "$1" "${1%.bak}"
 }
+
+function cf()
+{
+    cs $(find -type d | fzf)
+}
