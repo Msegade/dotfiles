@@ -1,0 +1,7 @@
+#!/bin/bash
+
+bibtex=$(curl -LH "Accept: text/bibliography; style=bibtex" http://dx.doi.org/"$1") 
+
+bibtex=$(echo "$bibtex" | sed -re "s/[^ ]+/&\n/" | sed -e "s/},/&\n/g")
+
+echo "$bibtex" | xsel -i
