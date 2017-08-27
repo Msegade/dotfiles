@@ -22,6 +22,8 @@ Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
+
+Plug 'matze/vim-tex-fold'
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
