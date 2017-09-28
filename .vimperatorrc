@@ -16,3 +16,8 @@ hi CompResult -append font-size:16px
 hi WarningMsg -append font-size:16px
 
 set activate-=tabopen
+
+" Toggle Tree Style Tab
+javascript function toggleTST() {if(gBrowser.treeStyleTab.tabbarShown){gBrowser.treeStyleTab.hideTabbar()}else{gBrowser.treeStyleTab.showTabbar()}}
+command! toggleTST javascript toggleTST()
+nnoremap <Tab> :toggleTST<CR>
