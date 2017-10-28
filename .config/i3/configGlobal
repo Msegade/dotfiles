@@ -181,3 +181,8 @@ client.focused #81a2be #81a2be #1d1f21 #282a2e
 client.focused_inactive #373b41 #373b41 #969896 #282a2e
 client.unfocused #282a2e #282a2e #969896 #282a2e
 client.urgent #373b41 #cc6666 #ffffff #cc6666
+
+set $sink `pactl list short sinks | grep -E \(RUNNING\|SUSPENDED\) | cut -f1`
+bindsym $mod+k exec --no-startup-id pactl set-sink-volume 0  +10% 
+bindsym $mod+j exec --no-startup-id pactl set-sink-volume 0  -10%
+bindsym $mod+m exec --no-startup-id pactl set-sink-mute $sink toggle
