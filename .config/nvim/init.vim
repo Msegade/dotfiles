@@ -24,6 +24,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
 Plug 'matze/vim-tex-fold'
+
+Plug 'nvie/vim-flake8'
+
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
