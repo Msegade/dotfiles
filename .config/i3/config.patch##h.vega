@@ -1,6 +1,14 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-18 13:38:09.595019095 +0200
-@@ -16,7 +16,7 @@
++++ config	2021-10-18 14:30:04.921977027 +0200
+@@ -3,6 +3,7 @@
+ # Theme created with i3-style (base-16 tomorrow)
+ 
+ set $mod Mod4
++set $control ~/.config/i3/workspace_controller.py
+ 
+ # Font for window titles. Will also be used by the bar unless a different font
+ # is used in the bar {} block below.
+@@ -16,7 +17,7 @@
  floating_modifier $mod
  
  # start a terminal
@@ -9,7 +17,7 @@
  
  # kill focused window
  bindsym $mod+x kill
-@@ -79,8 +79,21 @@
+@@ -79,33 +80,57 @@
  ################################################
  # Local Configuration
  
@@ -31,3 +39,59 @@
  ################################################
  
  # switch to workspace
+-bindsym $mod+1 workspace $WS1
+-bindsym $mod+2 workspace $WS2
+-bindsym $mod+3 workspace $WS3
+-bindsym $mod+4 workspace $WS4
+-bindsym $mod+5 workspace $WS5
+-bindsym $mod+6 workspace $WS6
+-bindsym $mod+7 workspace $WS7
+-bindsym $mod+8 workspace $WS8
+-bindsym $mod+9 workspace $WS9
+-bindsym $mod+0 workspace $WS10
++bindsym $mod+1 exec $control go 1
++bindsym $mod+2 exec $control go 2
++bindsym $mod+3 exec $control go 3
++bindsym $mod+4 exec $control go 4
++bindsym $mod+5 exec $control go 5
++bindsym $mod+6 exec $control go 6
++bindsym $mod+7 exec $control go 7
++bindsym $mod+8 exec $control go 8
++bindsym $mod+9 exec $control go 9
++bindsym $mod+0 exec $control go 0
+ 
+ # move focused container to workspace
+-bindsym $mod+Shift+1 move container to workspace $WS1
+-bindsym $mod+Shift+2 move container to workspace $WS2
+-bindsym $mod+Shift+3 move container to workspace $WS3
+-bindsym $mod+Shift+4 move container to workspace $WS4
+-bindsym $mod+Shift+5 move container to workspace $WS5
+-bindsym $mod+Shift+6 move container to workspace $WS6
+-bindsym $mod+Shift+7 move container to workspace $WS7
+-bindsym $mod+Shift+8 move container to workspace $WS8
+-bindsym $mod+Shift+9 move container to workspace $WS9
+-bindsym $mod+Shift+0 move container to workspace $WS10
++bindsym $mod+Shift+1 exec $control move 1
++bindsym $mod+Shift+2 exec $control move 2
++bindsym $mod+Shift+3 exec $control move 3
++bindsym $mod+Shift+4 exec $control move 4
++bindsym $mod+Shift+5 exec $control move 5
++bindsym $mod+Shift+6 exec $control move 6
++bindsym $mod+Shift+7 exec $control move 7
++bindsym $mod+Shift+8 exec $control move 8
++bindsym $mod+Shift+9 exec $control move 9
++bindsym $mod+Shift+0 exec $control move 0
++
++bindsym $mod+Left exec $control prev go
++bindsym $mod+Right exec $control next go
++bindsym $mod+Up exec $control up go
++bindsym $mod+Down exec $control down go
++
++bindsym $mod+Shift+Left exec $control prev move
++bindsym $mod+Shift+Right exec $control next move
++bindsym $mod+Shift+Up exec $control up move
++bindsym $mod+Shift+Down exec $control down move
++
+ 
+ # reload the configuration file
+ bindsym $mod+q reload
