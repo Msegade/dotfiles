@@ -1,0 +1,14 @@
+--- XmodmapGlobal	2017-04-29 12:05:24.651016961 +0200
++++ Xmodmap	2017-04-29 13:21:33.614875713 +0200
+@@ -5,7 +5,10 @@
+ remove Mod5 = ISO_Level3_Shift
+ remove control = Control_R Control_L
+ ! Assign the code of the key (left) to the action we want
+-!!
++keysym Escape = Alt_L
++keysym Caps_Lock = Escape
++keysym Alt_L = ISO_Level3_Shift
++keysym Menu = Control_R
+ ! Todas las teclas que tengan Alt_L como acción se les asigna 
+ ! el modificador Mod1
+ ! Add back tho modifiers
