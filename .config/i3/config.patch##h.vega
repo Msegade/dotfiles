@@ -1,5 +1,5 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-18 14:30:04.921977027 +0200
++++ config	2021-10-18 15:25:21.734218540 +0200
 @@ -3,6 +3,7 @@
  # Theme created with i3-style (base-16 tomorrow)
  
@@ -13,7 +13,7 @@
  
  # start a terminal
 -bindsym $mod+Return exec urxvtc
-+bindsym $mod+Return exec alacritty
++bindsym $mod+Return exec ~/bin/alacritty
  
  # kill focused window
  bindsym $mod+x kill

@@ -3,7 +3,7 @@ fpath=( $fpath "/home/miguel/.config/zsh/zfunctions" )
 export HISTSIZE=100000
 export SAVEHIST=100000
 
-export PATH=$PATH:/home/miguel/bin
+export PATH=$PATH:~/bin
 
 # Setup terminal, and turn on colors
 export TERM=screen-256color
