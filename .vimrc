@@ -1,4 +1,5 @@
 syntax enable
+set number
 
 set nocompatible
 set hidden
@@ -44,3 +45,4 @@ nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 
 imap <Leader>u <Esc>v`[U<Esc>gi
+

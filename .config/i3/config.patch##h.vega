@@ -1,5 +1,14 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-18 11:10:24.020567013 +0200
++++ config	2021-10-18 13:38:09.595019095 +0200
+@@ -16,7 +16,7 @@
+ floating_modifier $mod
+ 
+ # start a terminal
+-bindsym $mod+Return exec urxvtc
++bindsym $mod+Return exec alacritty
+ 
+ # kill focused window
+ bindsym $mod+x kill
 @@ -79,8 +79,21 @@
  ################################################
  # Local Configuration
