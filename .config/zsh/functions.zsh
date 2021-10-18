@@ -107,3 +107,13 @@ function cf()
 {
     cs $(find -type d | fzf)
 }
+
+function am()
+{
+    if [ $(setxkbmap -query | grep layout | cut -d':' -f2 | tr -d ' ') = "dvorak" ]; then
+        setxkbmap es
+    else
+        setxkbmap dvorak es
+        xmodmap ~/.config/Xorg/Xmodmap
+    fi
+}
