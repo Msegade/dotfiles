@@ -1,5 +1,5 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-19 09:42:26.567257400 +0200
++++ config	2021-10-20 14:36:29.339028875 +0200
 @@ -3,6 +3,7 @@
  # Theme created with i3-style (base-16 tomorrow)
  
@@ -17,25 +17,57 @@
  
  # kill focused window
  bindsym $mod+x kill
-@@ -79,33 +80,57 @@
+@@ -65,6 +66,7 @@
+ # focus the child container
+ bindsym $mod+b focus child
+ 
++set $WS0  "0"
+ set $WS1  "1"
+ set $WS2  "2"
+ set $WS3  "3"
+@@ -75,37 +77,81 @@
+ set $WS8  "8"
+ set $WS9  "9"
+ set $WS10 "10"
++set $WS11  "11"
++set $WS12  "12"
++set $WS13  "13"
++set $WS14  "14"
++set $WS15  "15"
++set $WS16  "16"
++set $WS17  "17"
++set $WS18  "18"
++set $WS19  "19"
++set $WS20  "20"
+ 
  ################################################
  # Local Configuration
  
-+workspace $WS1  output DP-1
-+workspace $WS2  output DP-1
-+workspace $WS3  output DP-1
-+workspace $WS4  output DP-1
-+workspace $WS5  output DP-1
-+workspace $WS6  output DVI-I-1
-+workspace $WS7  output DVI-I-1
-+workspace $WS8  output DVI-I-1
-+workspace $WS9  output DVI-I-1
-+workspace $WS10 output DVI-I-1
- 
++workspace $WS0   output DP-1
++workspace $WS1   output DP-1
++workspace $WS2   output DP-1
++workspace $WS3   output DP-1
++workspace $WS4   output DP-1
++workspace $WS5   output DP-1
++workspace $WS6   output DVI-I-1
++workspace $WS7   output DVI-I-1
++workspace $WS8   output DVI-I-1
++workspace $WS9   output DVI-I-1
++workspace $WS10  output DP-1
++workspace $WS11  output DP-1
++workspace $WS12  output DP-1
++workspace $WS13  output DP-1
++workspace $WS14  output DP-1
++workspace $WS15  output DP-1
++workspace $WS16  output DVI-I-1
++workspace $WS17  output DVI-I-1
++workspace $WS18  output DVI-I-1
++workspace $WS19  output DVI-I-1
++workspace $WS20  output DVI-I-1
  
 +bindsym $mod+h move container to output right
 +bindsym $mod+c focus output left
-+
+ 
  ################################################
  
  # switch to workspace
@@ -95,7 +127,7 @@
  
  # reload the configuration file
  bindsym $mod+q reload
-@@ -144,11 +169,26 @@
+@@ -144,11 +190,26 @@
  # Start i3bar to display a workspace bar (plus the system information i3status
  # finds out, if available)
  bar {
