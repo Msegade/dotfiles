@@ -1,5 +1,5 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-20 14:36:29.339028875 +0200
++++ config	2021-10-24 20:28:06.477079712 +0200
 @@ -3,6 +3,7 @@
  # Theme created with i3-style (base-16 tomorrow)
  
@@ -48,7 +48,7 @@
 +workspace $WS2   output DP-1
 +workspace $WS3   output DP-1
 +workspace $WS4   output DP-1
-+workspace $WS5   output DP-1
++workspace $WS5   output DVI-I-1
 +workspace $WS6   output DVI-I-1
 +workspace $WS7   output DVI-I-1
 +workspace $WS8   output DVI-I-1
@@ -58,7 +58,7 @@
 +workspace $WS12  output DP-1
 +workspace $WS13  output DP-1
 +workspace $WS14  output DP-1
-+workspace $WS15  output DP-1
++workspace $WS15  output DVI-I-1
 +workspace $WS16  output DVI-I-1
 +workspace $WS17  output DVI-I-1
 +workspace $WS18  output DVI-I-1
