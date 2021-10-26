@@ -19,4 +19,5 @@ alias vimw="nvim -c :VimwikiIndex"
 alias xtart="xinit $HOME/.config/Xorg/xinitrc -- vt01"
 
 alias rtv="rtv --enable-media"
+alias nv="nvim"
 

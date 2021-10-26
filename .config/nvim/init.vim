@@ -29,6 +29,8 @@ Plug 'matze/vim-tex-fold'
 
 Plug 'nvie/vim-flake8'
 
+Plug 'tmhedberg/SimpylFold'
+
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
@@ -142,3 +144,6 @@ command Bd bp\|bd \#
 " ----------------------------------------------------------------------------
 imap <Leader>u <Esc>v`[U<Esc>A
 nnoremap <CR> :noh<CR>
+map <Leader>p oimport ipdb; ipdb.set_trace()<ESC>
+
+        
