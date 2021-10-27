@@ -31,6 +31,8 @@ Plug 'nvie/vim-flake8'
 
 Plug 'tmhedberg/SimpylFold'
 
+"Plug 'chrisbra/csv.vim'
+
 "Plug 'justmao945/vim-clang'
 "let g:clang_compilation_database = './build'
 "let g:clang_compilation_database = '.'
@@ -69,6 +71,7 @@ Plug 'tmhedberg/SimpylFold'
 
 call plug#end()
 
+"filetype plugin on
 " ----------------------------------------------------------------------------
 "  Displaying text 
 " ----------------------------------------------------------------------------
@@ -147,3 +150,7 @@ nnoremap <CR> :noh<CR>
 map <Leader>p oimport ipdb; ipdb.set_trace()<ESC>
 
         
+augroup nastran
+    autocmd!
+    autocmd BufNewFile,BufRead *.bdf set filetype=nastran
+augroup END
