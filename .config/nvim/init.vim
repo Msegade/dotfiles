@@ -149,7 +149,9 @@ imap <Leader>u <Esc>v`[U<Esc>A
 nnoremap <CR> :noh<CR>
 map <Leader>p oimport ipdb; ipdb.set_trace()<ESC>
 
-        
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+
 augroup nastran
     autocmd!
     autocmd BufNewFile,BufRead *.bdf set filetype=nastran
