@@ -1,5 +1,5 @@
 --- configGlobal	2021-10-18 09:49:07.999114894 +0200
-+++ config	2021-10-24 20:28:06.477079712 +0200
++++ config	2021-11-04 15:52:06.726381473 +0100
 @@ -3,6 +3,7 @@
  # Theme created with i3-style (base-16 tomorrow)
  
@@ -25,7 +25,7 @@
  set $WS1  "1"
  set $WS2  "2"
  set $WS3  "3"
-@@ -75,37 +77,81 @@
+@@ -75,37 +77,100 @@
  set $WS8  "8"
  set $WS9  "9"
  set $WS10 "10"
@@ -39,6 +39,15 @@
 +set $WS18  "18"
 +set $WS19  "19"
 +set $WS20  "20"
++set $WS21  "21"
++set $WS22  "22"
++set $WS23  "23"
++set $WS24  "24"
++set $WS25  "25"
++set $WS26  "26"
++set $WS27  "27"
++set $WS28  "28"
++set $WS29  "29"
  
  ################################################
  # Local Configuration
@@ -63,7 +72,16 @@
 +workspace $WS17  output DVI-I-1
 +workspace $WS18  output DVI-I-1
 +workspace $WS19  output DVI-I-1
-+workspace $WS20  output DVI-I-1
++workspace $WS20  output DP-1
++workspace $WS21  output DP-1
++workspace $WS22  output DP-1
++workspace $WS23  output DP-1
++workspace $WS24  output DP-1
++workspace $WS25  output DVI-I-1
++workspace $WS26  output DVI-I-1
++workspace $WS27  output DVI-I-1
++workspace $WS28  output DVI-I-1
++workspace $WS29  output DVI-I-1
  
 +bindsym $mod+h move container to output right
 +bindsym $mod+c focus output left
@@ -116,8 +134,9 @@
 +
 +bindsym $mod+Left exec $control prev go
 +bindsym $mod+Right exec $control next go
-+bindsym $mod+Up exec $control up go
-+bindsym $mod+Down exec $control down go
++
++bindsym $mod+plus exec $control up go
++bindsym $mod+minus exec $control down go
 +
 +bindsym $mod+Shift+Left exec $control prev move
 +bindsym $mod+Shift+Right exec $control next move
@@ -127,7 +146,7 @@
  
  # reload the configuration file
  bindsym $mod+q reload
-@@ -144,11 +190,26 @@
+@@ -144,7 +209,8 @@
  # Start i3bar to display a workspace bar (plus the system information i3status
  # finds out, if available)
  bar {
@@ -137,7 +156,16 @@
          tray_output primary
    colors {
      separator #969896
-     background #1d1f21
+@@ -157,6 +223,20 @@
+   }
+ }
+ 
++bar {
++  output DVI-I-1
++  status_command i3status -c ~/.config/i3/i3status2.conf
++  colors {
++    separator #969896
++    background #1d1f21
 +    statusline #c5c8c6
 +    focused_workspace #81a2be #81a2be #1d1f21
 +    active_workspace #373b41 #373b41 #ffffff
@@ -146,12 +174,15 @@
 +  }
 +}
 +
-+bar {
-+  output DVI-I-1
-+  status_command i3status -c ~/.config/i3/i3status2.conf
-+  colors {
-+    separator #969896
-+    background #1d1f21
-     statusline #c5c8c6
-     focused_workspace #81a2be #81a2be #1d1f21
-     active_workspace #373b41 #373b41 #ffffff
+ new_window pixel
+ focus_follows_mouse no
+ 
+@@ -168,7 +248,7 @@
+ for_window [instance="notes"] move scratchpad; 
+ #bindsym $mod+Shift+minus move scratchpad
+ # Show the first scratchpad window
+-bindsym $mod+minus [instance="notes"] scratchpad show
++bindsym $mod+F12 [instance="notes"] scratchpad show
+ 
+ 
+ exec --no-startup-id urxvtc -name dropdown

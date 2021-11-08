@@ -4,18 +4,11 @@
 
 call plug#begin('~/.vim/plugged')
 
-
 Plug 'altercation/vim-colors-solarized'
 
 Plug 'scrooloose/nerdtree'
 
-Plug 'altercation/vim-colors-solarized'
-
 Plug 'majutsushi/tagbar'
-
-Plug 'Rip-Rip/clang_complete'
-
-Plug 'octol/vim-cpp-enhanced-highlight'
 
 Plug 'vimwiki/vimwiki' 
 
@@ -25,68 +18,26 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
 
-Plug 'matze/vim-tex-fold'
-
 Plug 'nvie/vim-flake8'
 
 Plug 'tmhedberg/SimpylFold'
 
-"Plug 'chrisbra/csv.vim'
-
-"Plug 'justmao945/vim-clang'
-"let g:clang_compilation_database = './build'
-"let g:clang_compilation_database = '.'
-"let g:clang_ccp_options = '-std=c++1 -stdlib=libc++'
-"Plug 'taglist.vim'
-"Plug 'Shougo/deoplete.nvim'
-"
-
-" Make sure you use single quotes
-"Plug 'junegunn/seoul256.vim'
-"Plug 'junegunn/vim-easy-align'
-
-" Group dependencies, vim-snippets depends on ultisnips
-"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
-
-" On-demand loading
-"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
-" Using git URL
-"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-
-" Using a non-master branch
-"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
-" Plugin options
-"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-
-" Unmanaged plugin (manually installed and updated)
-"Plug '~/my-prototype-plugin'
-
-" Add plugins to &runtimepath
+" Latex
+Plug 'lervag/vimtex'
+Plug 'matze/vim-tex-fold'
+" ----------------------------------------------------------------------------
 
 call plug#end()
 
-"filetype plugin on
-" ----------------------------------------------------------------------------
-"  Displaying text 
-" ----------------------------------------------------------------------------
-
 syntax on
 
-set number
+set relativenumber
 
 set scrolloff=3
 
 set linebreak
 
 set showbreak=>>\ \ 
-
-
 " ----------------------------------------------------------------------------
 "  Tabs and indenting 
 " ----------------------------------------------------------------------------
@@ -123,6 +74,8 @@ set ruler
 " ----------------------------------------------------------------------------
 
 set hidden
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
 
 " ----------------------------------------------------------------------------
 "  Command line editing 
@@ -145,14 +98,19 @@ command Bd bp\|bd \#
 " ----------------------------------------------------------------------------
 "  Mappings
 " ----------------------------------------------------------------------------
+
+" Change to caps
 imap <Leader>u <Esc>v`[U<Esc>A
+" No highlight
 nnoremap <CR> :noh<CR>
+
+" Python
 map <Leader>p oimport ipdb; ipdb.set_trace()<ESC>
+" ----------------------------------------------------------------------------
 
-nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
-
+" Nastran
 augroup nastran
     autocmd!
     autocmd BufNewFile,BufRead *.bdf set filetype=nastran
 augroup END
+" ----------------------------------------------------------------------------
