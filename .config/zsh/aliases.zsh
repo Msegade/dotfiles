@@ -16,6 +16,8 @@ alias tren='trans -s en -t es -I'
 alias p='ping -c 3 8.8.8.8'
 
 alias vimw="nvim -c :VimwikiIndex"
+alias nvc="nvim $HOME/.config/nvim/init.vim"
+
 
 alias xtart="xinit $HOME/.config/Xorg/xinitrc -- vt01"
 

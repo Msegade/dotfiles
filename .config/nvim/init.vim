@@ -18,6 +18,8 @@ Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-repeat'
 
+Plug 'PeterRincker/vim-argumentative'
+
 Plug 'nvie/vim-flake8'
 
 Plug 'tmhedberg/SimpylFold'
@@ -31,6 +33,7 @@ call plug#end()
 
 syntax on
 
+set number
 set relativenumber
 
 set scrolloff=3
