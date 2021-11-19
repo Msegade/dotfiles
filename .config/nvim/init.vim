@@ -33,14 +33,22 @@ call plug#end()
 
 syntax on
 
+" ----------------------------------------------------------------------------
+"  Navigation
+" ----------------------------------------------------------------------------
+
 set number
 set relativenumber
-
 set scrolloff=3
-
 set linebreak
-
 set showbreak=>>\ \ 
+
+" Wrapped Lines
+noremap <expr> j v:count ? 'j' : 'gj'
+noremap <expr> k v:count ? 'k' : 'gk'
+
+noremap d$ g0dg$g0
+
 " ----------------------------------------------------------------------------
 "  Tabs and indenting 
 " ----------------------------------------------------------------------------
@@ -50,7 +58,6 @@ set smarttab              " <TAB> in front of line inserts 'shiftwidth' blanks
 set softtabstop=4
 set shiftround            " round to 'shiftwidth' for "<<" and ">>"
 set expandtab
-
 
 " ----------------------------------------------------------------------------
 "  Syntax, highlighting and spelling
