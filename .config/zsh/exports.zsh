@@ -27,6 +27,7 @@ fi
 
 
 export PAGER='less'
-export EDITOR='vim'
+export EDITOR='nvim'
 export BROWSER='firefox'
 
+export LD_LIBRARY_PATH='/usr/local/lib64'
