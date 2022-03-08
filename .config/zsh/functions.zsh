@@ -117,3 +117,12 @@ function am()
         xmodmap ~/.config/Xorg/Xmodmap
     fi
 }
+
+function zo()
+{
+    zdir=$HOME/Zotero/storage
+    folders=$(echo "$1" | tr a-z A-Z)
+    firstFolder=$(echo $zdir/${folders}* | cut -d' ' -f1)
+    echo $firstFolder
+    zathura $firstFolder/*.pdf
+}

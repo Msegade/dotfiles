@@ -10,7 +10,9 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'majutsushi/tagbar'
 
+" Wiki
 Plug 'vimwiki/vimwiki' 
+Plug 'michal-h21/vim-zettel'
 
 Plug 'PotatoesMaster/i3-vim-syntax'
 
@@ -24,9 +26,17 @@ Plug 'nvie/vim-flake8'
 
 Plug 'tmhedberg/SimpylFold'
 
+" FZF
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
+
 " Latex
 Plug 'lervag/vimtex'
 Plug 'matze/vim-tex-fold'
+
+" Programming
+Plug 'JuliaEditorSupport/julia-vim'
 " ----------------------------------------------------------------------------
 
 call plug#end()
