@@ -122,6 +122,23 @@ bindsym $mod+Shift+8 move container to workspace $WS8
 bindsym $mod+Shift+9 move container to workspace $WS9
 bindsym $mod+Shift+0 move container to workspace $WS10
 
+bindsym $mod+c focus output left
+bindsym $mod+h move container to output right
+
+workspace $WS0   output HDMI-A-2
+workspace $WS1   output HDMI-A-2
+workspace $WS2   output HDMI-A-2
+workspace $WS3   output HDMI-A-2
+workspace $WS4   output HDMI-A-2
+workspace $WS5   output eDP-1
+workspace $WS6   output eDP-1
+workspace $WS7   output eDP-1
+workspace $WS8   output eDP-1
+workspace $WS9   output eDP-1
+
+output  HDMI-A-2 pos 0 0 res 2560x1440
+output  eDP-1 pos 2560 0 res 1920x1080
+
 # reload the configuration file
 bindsym $mod+q reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -219,7 +236,4 @@ bindsym $mod+m exec --no-startup-id pactl set-sink-mute $sink toggle
 
 for_window [class="FLTK"] floating enable
 
-bindsym $mod+c focus output left
-output  HDMI-A-2 pos 0 0 res 2560x1440
-output  eDP-1 pos 2560 0 res 1920x1080
 
