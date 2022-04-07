@@ -1,0 +1,24 @@
+#!/bin/bash
+
+patchLocalFiles
+
+xmodmap ~/.config/Xorg/Xmodmap
+
+xrdb ~/.config/Xorg/Xresources
+
+unclutter -idle 2 &
+
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
+
+urxvtd &
+
+#compton --opengl --vsync opengl-swc --paint-on-overlay -b 
+pgrep redshift &> /dev/null || redshift &> /dev/null &
+
+dunst &
+udiskie &
+
+wallpaper.sh
+
+sway
