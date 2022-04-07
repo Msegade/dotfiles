@@ -1,1 +1,31 @@
-browser /usr/bin/firefox
+# no automatic reloading
+refresh-on-startup no
+auto-reload no
+reload-time 360 # minutes
+
+# reloading
+reload-threads 4
+reload-only-visible-feeds no
+show-read-feeds yes
+download-retries 4
+
+# notification
+notify-screen yes
+notify-xterm yes
+
+# storage
+max-items 200
+
+browser firefox
+
+# display
+color info default default reverse
+color listnormal_unread yellow default
+color listfocus blue default reverse bold
+color listfocus_unread blue default reverse bold
+
+# interface
+confirm-exit yes
+bind-key k up
+bind-key j down
+bind-key O open-in-browser-and-mark-read

@@ -1,1 +1,38 @@
-https://blog.pointwise.com/feed/
+#https://twitrss.me/twitter_user_to_rss/?user=freecadnews "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=open_cascade "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=openvsp "Free Software"
+#http://www.salome-platform.org/news/RSS "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=qcad_org "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=librecad "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=onelabmodels "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=brl_cad "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=openscad "Free Software"
+https://code.blender.org/feed/ "Free Software"
+https://blog.kitware.com/feed/ "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=kitware "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=codeaster "Free Software"
+#https://twitrss.me/twitter_user_to_rss/?user=openmdao "Free Software"
+
+http://feaforall.com/feed/ "FEM"
+https://blog.pointwise.com/feed/ "FEM"
+
+http://feeds.feedburner.com/nvidia/parallelforall "Programming"
+https://medium.mybridge.co/feed "Programming"
+
+https://sanctum.geek.nz/arabesque/feed/ "Linux"
+http://www.linux-magazine.com/rss/feed/lmi_news "Linux"
+http://feeds.feedburner.com/linuxjournalcom "Linux"
+https://www.cyberciti.biz/atom/atom.xml "Linux"
+
+https://theaviationist.com/feed/ "Aviation"
+
+http://feeds.feedburner.com/PhysicsWorldNews "Physics"
+http://feeds.feedburner.com/physicscentral/PhysicsBuzz "Physics"
+https://jphysplus.iop.org/feed/ "Physics"
+
+https://www.universetoday.com/feed/ "Space"
+
+http://planetpython.org/rss20.xml "Python"
+http://planet.scipy.org/rss20.xml "Python"
+
+#http://feeds.feedburner.com/n0where "Security"
