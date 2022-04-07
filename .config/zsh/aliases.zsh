@@ -24,3 +24,6 @@ alias xtart="xinit $HOME/.config/Xorg/xinitrc -- vt01"
 alias rtv="rtv --enable-media"
 alias nv="nvim"
 
+alias nastran="/opt/nastran/2012/bin/nast20121"
+alias hm="/opt/hyperworks/2018/altair/scripts/hm"
+alias hv="LIBGL_DRI3_DISABLE=true /opt/hyperworks/2018/altair/scripts/hv"

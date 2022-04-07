@@ -35,4 +35,4 @@ export LD_LIBRARY_PATH='/usr/local/lib64'
 # FZF
 export FZF_DEFAULT_COMMAND=fzf
 
-
+export ALTAIR_LICENSE_PATH='6200@gme.udc.es'
