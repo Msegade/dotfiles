@@ -4,7 +4,7 @@
 
 # Keyboard
 input type:keyboard {
-    xkb_file "$HOME/.config/xkb/custom-dvorak.xkb"
+    xkb_file "/home/miguel/.config/xkb/english-keyboard-spanish-dvorak.xkb"
     #xkb_layout "es"
     #xkb_variant "dvorak"
     #xkb_options "altwin:menu_win,caps:escape,lv3:lalt_switch"
