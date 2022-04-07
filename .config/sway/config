@@ -220,3 +220,6 @@ bindsym $mod+m exec --no-startup-id pactl set-sink-mute $sink toggle
 for_window [class="FLTK"] floating enable
 
 bindsym $mod+c focus output left
+output  HDMI-A-2 pos 0 0 res 2560x1440
+output  eDP-1 pos 2560 0 res 1920x1080
+
