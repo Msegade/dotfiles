@@ -86,7 +86,7 @@ xkb_keycodes "evdev+aliases(qwerty)" {
      <KP0> = 90;
     <KPDL> = 91;
     <LVL3> = 92;
-    <LSGT> = 94;
+    <LSGT> = 51;
     <FK11> = 95;
     <FK12> = 96;
     <AB11> = 97;
