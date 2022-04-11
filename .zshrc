@@ -19,7 +19,7 @@ eval `dircolors ~/.config/dircolors`
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # Autojump
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+[[ -s /etc/profile.d/autojump.zsh ]] && source /etc/profile.d/autojump.zsh 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
