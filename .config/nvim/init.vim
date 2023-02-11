@@ -123,6 +123,8 @@ command Bd bp\|bd \#
 imap <Leader>u <Esc>v`[U<Esc>A
 " No highlight
 nnoremap <CR> :noh<CR>
+" Curly brace for english keyboard
+imap <C-t> }
 
 " Python
 map <Leader>p oimport ipdb; ipdb.set_trace()<ESC>

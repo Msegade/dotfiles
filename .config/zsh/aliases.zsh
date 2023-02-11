@@ -27,3 +27,6 @@ alias nv="nvim"
 alias nastran="/opt/nastran/2012/bin/nast20121"
 alias hm="/opt/hyperworks/2018/altair/scripts/hm"
 alias hv="LIBGL_DRI3_DISABLE=true /opt/hyperworks/2018/altair/scripts/hv"
+
+# Latex
+alias tlmgr='/usr/share/texmf-dist/scripts/texlive/tlmgr.pl --usermode'

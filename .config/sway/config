@@ -4,11 +4,16 @@
 
 # Keyboard
 input type:keyboard {
-    xkb_file "/home/miguel/.config/xkb/english-keyboard-spanish-dvorak.xkb"
+    #xkb_file "/home/miguel/.config/xkb/english-keyboard-spanish-dvorak.xkb"
+    xkb_file "/home/miguel/.config/xkb/custom-dvorak.xkb"
     #xkb_layout "es"
     #xkb_variant "dvorak"
     #xkb_options "altwin:menu_win,caps:escape,lv3:lalt_switch"
     }
+}
+
+input type:touchpad {
+    tap enabled
 }
 
 #input "custom-keyboard" xkb_file /home/mrodriguez/custom-dvorak.xkb
@@ -136,8 +141,13 @@ workspace $WS8   output eDP-1
 workspace $WS9   output eDP-1
 workspace $WS0   output eDP-1
 
-output  HDMI-A-2 pos 0 0 res 2560x1440
-output  eDP-1 pos 2560 0 res 1920x1080
+# Display order
+output  eDP-1 pos 0 0 res 1920x1080
+output  HDMI-A-2 pos 1920 0 res 1920x1080
+#output  eDP-1 pos 0 0 res 1920x1080
+#output  HDMI-A-2 pos 2048 0 res 2048x1080
+#output  HDMI-A-2 pos 0 0 res 3840x2160
+#output  eDP-1 pos 3840 0 res 1920x1080
 
 # reload the configuration file
 bindsym $mod+q reload
@@ -235,5 +245,4 @@ bindsym $mod+j exec --no-startup-id pactl set-sink-volume 0  -10%
 bindsym $mod+m exec --no-startup-id pactl set-sink-mute $sink toggle
 
 for_window [class="FLTK"] floating enable
-
 

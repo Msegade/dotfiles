@@ -4,6 +4,7 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/.local/bin
 
 # Setup terminal, and turn on colors
 export TERM=screen-256color
@@ -37,3 +38,8 @@ export FZF_DEFAULT_COMMAND=fzf
 
 export ALTAIR_LICENSE_PATH='6200@gme.udc.es'
 export PYTHONPATH=/usr/share/gmsh/api/python
+export MSC_LICENSE_FILE='27500@gme.udc.es'
+
+
+
+
