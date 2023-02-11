@@ -43,6 +43,8 @@ bindsym $mod+x kill
 
 # start rofi
 bindsym $mod+e exec rofi -show run -font "inconsolata 12"
+bindsym $mod+plus exec rofi -show calc -no-show-match -no-sort
+
 
 bindsym $mod+Shift+u exec ~/bin/modifyfont increase
 bindsym $mod+Shift+d exec ~/bin/modifyfont decrease

@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'altercation/vim-colors-solarized'
 
+Plug 'altercation/vim-colors-solarized'
+
 Plug 'scrooloose/nerdtree'
 
 Plug 'majutsushi/tagbar'
