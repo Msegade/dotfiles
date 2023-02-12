@@ -1,0 +1,19 @@
+1. vi, vim, sudo -> visudo
+2. yadm -> git config --global
+3. udiskie
+4. ssh -> ss-keygen -> github
+5. wget, fakeroot, go, base-devel -> makepkg yay
+6. antibody-bin, zsh
+7. neovim-plug, neovim
+8. htop
+9. xorg-xrandr, xorg-xrdb, rxvt-unicode, rofi, rofi-calc
+10. ttf-inconsolata, ttf-dejavu, noto-font-emoji
+11. sway -> swaymsg -t get_outputs -> update sway config
+12. pkgfile -> pkgfile --update
+13. firefox -> tridactyl, ublock-origin
+14. chromium
+15. fzf
+16. pulse-secure, psmisc, gtkmm3, webkit2gtk,  -> systemctl start pulsesecure -> 
+17. pulseaudio, pulseaudio-alsa, pavucontrol 
+18. NetworManager -> systemctl enable NetworkManager...
+19. tldr
