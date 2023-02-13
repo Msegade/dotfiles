@@ -9,15 +9,17 @@
 9. xorg-xrandr, xorg-xrdb, rxvt-unicode, rofi, rofi-calc
 10. ttf-inconsolata, ttf-dejavu, noto-font-emoji
 11. sway -> swaymsg -t get_outputs -> update sway config
-12. pkgfile -> pkgfile --update
-13. firefox -> tridactyl, ublock-origin
-14. chromium
-15. fzf
-16. pulse-secure, psmisc, gtkmm3, webkit2gtk,  -> systemctl start pulsesecure -> 
-17. pulseaudio, pulseaudio-alsa, pavucontrol 
-18. NetworManager -> systemctl enable NetworkManager...
-19. tldr, translate-shell
-20. thunderbird, telegram-desktop
-21. ag, tree
-22. curl
-23. urxvt-perls
+12. swaybg
+13. pkgfile -> pkgfile --update
+14. firefox -> tridactyl, ublock-origin
+15. chromium
+16. fzf
+17. pulse-secure, psmisc, gtkmm3, webkit2gtk,  -> systemctl start pulsesecure -> 
+18. pulseaudio, pulseaudio-alsa, pavucontrol 
+19. NetworManager -> systemctl enable NetworkManager...
+20. tldr, translate-shell
+21. thunderbird, telegram-desktop
+22. ag, tree
+23. curl
+24. urxvt-perls
+25. ranger, screen
