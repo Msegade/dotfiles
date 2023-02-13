@@ -16,4 +16,8 @@
 16. pulse-secure, psmisc, gtkmm3, webkit2gtk,  -> systemctl start pulsesecure -> 
 17. pulseaudio, pulseaudio-alsa, pavucontrol 
 18. NetworManager -> systemctl enable NetworkManager...
-19. tldr
+19. tldr, translate-shell
+20. thunderbird, telegram-desktop
+21. ag, tree
+22. curl
+23. urxvt-perls
