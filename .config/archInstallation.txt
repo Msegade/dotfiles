@@ -4,7 +4,7 @@
 4. ssh -> ss-keygen -> github
 5. wget, fakeroot, go, base-devel -> makepkg yay
 6. antibody-bin, zsh
-7. neovim-plug, neovim
+7. neovim-plug, neovim -> git clone vimwiki
 8. htop
 9. xorg-xrandr, xorg-xrdb, rxvt-unicode, rofi, rofi-calc
 10. ttf-inconsolata, ttf-dejavu, noto-font-emoji
@@ -23,3 +23,4 @@
 23. curl
 24. urxvt-perls
 25. ranger, screen
+26. grim, slurp
