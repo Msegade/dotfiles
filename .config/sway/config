@@ -18,9 +18,10 @@ input type:touchpad {
 
 #input "custom-keyboard" xkb_file /home/mrodriguez/custom-dvorak.xkb
 
-
 exec xrdb -load ~/.config/Xorg/Xresources
 exec urxvtd
+exec bing-download.sh
+exec swaybg -i $HOME/Images/wallpapers/$(date +%F).jpg 
 
 set $mod Mod4
 
@@ -132,21 +133,25 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 bindsym $mod+c focus output left
 bindsym $mod+h move container to output right
 
-workspace $WS1   output HDMI-A-2
-workspace $WS2   output HDMI-A-2
-workspace $WS3   output HDMI-A-2
-workspace $WS4   output HDMI-A-2
-workspace $WS5   output HDMI-A-2
-workspace $WS6   output HDMI-A-3
-workspace $WS7   output HDMI-A-3
-workspace $WS8   output HDMI-A-3
-workspace $WS9   output HDMI-A-3
-workspace $WS0   output HDMI-A-3
+workspace $WS1   output HDMI-A-1
+workspace $WS2   output HDMI-A-1
+workspace $WS3   output HDMI-A-1
+workspace $WS4   output HDMI-A-1
+workspace $WS5   output HDMI-A-1
+workspace $WS6   output HDMI-A-2
+workspace $WS7   output HDMI-A-2
+workspace $WS8   output HDMI-A-2
+workspace $WS9   output HDMI-A-2
+workspace $WS0   output HDMI-A-2
 
 # Display order
-output  HDMI-A-2 pos 0 0 res 1920x1080
 #output  HDMI-A-2 disable
-output  HDMI-A-3 pos 1920 0 res 1920x1080
+output  HDMI-A-1 disable
+#output  HDMI-A-1 pos 0 0 res 1920x1080
+output  HDMI-A-2 pos 0 0 res 1920x1080
+#output  HDMI-A-3 pos 1920 0 res 1920x1080
+#output  HDMI-A-2 pos 0 0 res 3840x2160
+#output  HDMI-A-3 pos 3840 0 res 1920x1080
 #output  eDP-1 pos 0 0 res 1920x1080
 #output  HDMI-A-2 pos 1920 0 res 1920x1080
 #output  eDP-1 pos 0 0 res 1920x1080

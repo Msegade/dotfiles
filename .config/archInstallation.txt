@@ -24,3 +24,4 @@
 24. urxvt-perls
 25. ranger, screen
 26. grim, slurp
+27. Inkscape, otf-latin-modern
