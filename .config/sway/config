@@ -20,8 +20,7 @@ input type:touchpad {
 
 exec xrdb -load ~/.config/Xorg/Xresources
 exec urxvtd
-exec bing-download.sh
-exec swaybg -i $HOME/Images/wallpapers/$(date +%F).jpg 
+exec bing-download.sh && swaybg -i $HOME/Images/wallpapers/$(date +%F).jpg 
 
 set $mod Mod4
 

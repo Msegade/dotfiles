@@ -9,6 +9,8 @@ setopt INTERACTIVE_COMMENTS
 
 # ===== History
 
+setopt HIST_IGNORE_SPACE
+
 # Allow multiple terminal sessions to all append to one zsh command history
 setopt APPEND_HISTORY 
 
