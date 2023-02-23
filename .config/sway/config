@@ -18,6 +18,7 @@ input type:touchpad {
 
 #input "custom-keyboard" xkb_file /home/mrodriguez/custom-dvorak.xkb
 
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec xrdb -load ~/.config/Xorg/Xresources
 exec urxvtd
 exec bing-download.sh && swaybg -i $HOME/Images/wallpapers/$(date +%F).jpg 

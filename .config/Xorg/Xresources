@@ -11,6 +11,9 @@ URxvt.transparent: true
 URxvt.shading: 20
 URxvt.urgentOnBell: true
 
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+
 
 ! Extensions
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select

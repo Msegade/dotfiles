@@ -7,7 +7,7 @@
 7. neovim-plug, neovim -> git clone vimwiki
 8. htop
 9. xorg-xrandr, xorg-xrdb, rxvt-unicode, rofi, rofi-calc
-10. ttf-inconsolata, ttf-dejavu, noto-font-emoji
+10. ttf-inconsolata, ttf-dejavu, noto-fonts, noto-font-emoji
 11. sway -> swaymsg -t get_outputs -> update sway config
 12. swaybg
 13. pkgfile -> pkgfile --update
@@ -20,9 +20,12 @@
 20. tldr, translate-shell
 21. thunderbird, telegram-desktop
 22. ag, tree
-23. curl
+23. curl, graphviz
 24. urxvt-perls
 25. ranger, screen
 26. grim, slurp
-27. Inkscape, otf-latin-modern
-28. exa
+27. Inkscape, otf-latin-modern, freecad
+28. exa, autojump, dfc
+29. ttf-ms-fonts
+30. python-ipython, python-setuptools
+31. tmux
